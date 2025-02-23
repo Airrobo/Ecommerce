@@ -13,6 +13,9 @@ app.use(fileUpload({
     tempFileDir: "/tmp/"
 }));
 
+const cors = require("cors");
+app.use(cors()); // Allows cross-origin requests
+
 
 const PORT = process.env.PORT || 5000;
 
