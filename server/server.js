@@ -24,7 +24,7 @@ app.get('/',(req,res)=>{
 })
 
 app.listen(PORT,() => {
-    console.log("SERVER IS RUNNING ...")
+    console.log("SERVER IS RUNNING ....")
 })
 
 //Routes 
@@ -38,6 +38,7 @@ app.use('/api',require('./routes/productRouter'))
 
 const URI = process.env.MONGODB_URI;
 
+console.log("MONGODB_URI:", process.env.MONGODB_URI);
 
 mongoose.connect(URI,{
     
